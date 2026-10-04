@@ -1,4 +1,4 @@
-import myPic from './myPic.png'
+import myPic from './myPic.png';
 import { useState, useEffect } from 'react'
 import { List, X, ArrowUpRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser } from '@phosphor-icons/react'
 import Icon from './components/Icon.jsx'
