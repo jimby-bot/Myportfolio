@@ -4,6 +4,7 @@ import Icon from './components/Icon.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
 import Card from './components/Card.jsx'
+import myPic from './mypic.png';
 import { NAV, SKILLS, SERVICES, PROJECTS } from './data.js'
 
 export default function App() {
