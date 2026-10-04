@@ -7,8 +7,8 @@ export default function Sidebar({ open, setOpen, active }) {
     <aside id="menu" className={'side' + (open ? ' open' : '')} aria-label="Sidebar">
       <div className="profile">
         <div className="avatar">
-          <img src='mypic.png' alt="Jimboy Torralba" />
-        </div>
+     <img src={myPic} alt="Jimboy Torralba" />
+      </div>
         <p className="name">Jimboy Torralba <span style={{ color: 'var(--dark)' }}><Icon icon={SealCheck} /></span></p>
         <p className="role">Aspiring Web Developer</p>
         <div className="soc">
