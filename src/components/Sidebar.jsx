@@ -1,6 +1,7 @@
 import { SealCheck, FacebookLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 import Icon from './Icon.jsx'
 import { NAV } from '../data.js'
+import myPic from "../myPic.png"
 
 export default function Sidebar({ open, setOpen, active }) {
   return (
