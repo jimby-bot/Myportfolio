@@ -28,7 +28,7 @@ body {
 /* ---------- sidebar ---------- */
 .side {
   width: 280px;
-  padding: 18px 14px;
+  padding: 24px 18px;
   flex: none; position: sticky; top: 24px; 
   align-self: flex-start;
   height: calc(100vh - 48px);
@@ -60,8 +60,8 @@ body {
 .soc a:hover { background: var(--dark); color: #fff; transform: translateY(-2px); }
 .side hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 0 0 14px; }
 .nav {
-  display: flex; gap: 12px; align-items: center; padding: 12px 16px; margin-bottom: 4px;
-  border-radius: 14px; text-decoration: none; font-weight: 500; color: var(--text); transition: .2s;
+  display: flex; gap: 12px; align-items: center; padding: 10px 14px; margin-bottom: 4px;
+  border-radius: 14px; text-decoration: none; font-weight: 460; color: var(--text); transition: .2s;
 }
 .nav:hover { background: #87ceeb4d; }
 .nav.on {
