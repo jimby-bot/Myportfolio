@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { List, X, ArrowUpRight, ArrowRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser } from '@phosphor-icons/react'
+import { List, X, ArrowUpRight, ArrowRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser, Code, RocketLaunch } from '@phosphor-icons/react'
 import Icon from './components/Icon.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
@@ -7,6 +7,11 @@ import Card from './components/Card.jsx'
 import HeroArt from './components/HeroArt.jsx'
 import { NAV, SKILLS, SERVICES, PROJECTS, EDUCATION } from './data.js'
 
+const FACTS = [
+  [GraduationCap, '3rd-Year BSIT', 'Nueva Vizcaya State University'],
+  [Code, 'Web Development', 'HTML, CSS, JavaScript and React'],
+  [RocketLaunch, 'My Goal', 'Become a full-stack developer'],
+]
 export default function App() {
   const [open, setOpen] = useState(false)      // is the mobile menu open?
   const [active, setActive] = useState('home') // which nav link is highlighted?
@@ -65,6 +70,14 @@ export default function App() {
     <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
       I’m passionate about learning web development and building practical digital solutions.
       I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer.</p>
+    <ul className="facts">
+  {FACTS.map(([icon, title, sub]) => (
+    <li key={title}>
+      <span className="ico"><Icon icon={icon} /></span>
+      <div><b>{title}</b><small>{sub}</small></div>
+    </li>
+  ))}
+</ul>
     <div className="bar" aria-hidden="true"><span></span></div>
   </Card>
   <Card id="projects" icon={FolderSimple} title="Projects">
