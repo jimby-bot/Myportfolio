@@ -1,5 +1,5 @@
 import {
-  House, FolderSimple, User, Lightning, EnvelopeSimple,
+  House, FolderSimple, User, Lightning, EnvelopeSimple, GraduationCap,
   Atom,
   Browser, DeviceMobile, PaintBrush,
   FacebookLogo, LinkedinLogo, GithubLogo,
@@ -12,6 +12,7 @@ export const NAV = [
   ['projects', 'Projects', FolderSimple],
   ['about', 'About', User],
   ['skills', 'Skills', Lightning],
+  ['education', 'Education', GraduationCap],
   ['contact', 'Contact', EnvelopeSimple],
 ]
 export const SOCIALS = [
