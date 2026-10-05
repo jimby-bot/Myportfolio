@@ -61,7 +61,15 @@ export default function App() {
         <Drivers />
 
         <div className="bento">
-          <Card id="projects" icon={FolderSimple} title="Projects" wide>
+           <Card id="about" icon={User} title="About">
+            <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
+              I’m passionate about learning web development and building practical digital solutions.
+              I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer..</p>
+            <div className="bar" aria-hidden="true"><span></span></div>
+          </Card>
+            </div>
+          </Card>
+           <Card id="projects" icon={FolderSimple} title="Projects" wide>
             <p>Websites and apps I built while learning.</p>
             <div className="tiles">
               {PROJECTS.map(([title, tag, desc, icon]) => (
@@ -75,14 +83,6 @@ export default function App() {
                   <span className="go"><Icon icon={ArrowRight} size={18} weight="bold" /></span>
                 </div>
               ))}
-            </div>
-          </Card>
-          <Card id="about" icon={User} title="About">
-            <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
-              I’m passionate about learning web development and building practical digital solutions.
-              I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer..</p>
-            <div className="bar" aria-hidden="true"><span></span></div>
-          </Card>
           <Card id="skills" icon={Lightning} title="Skills">
             <p>What I'm practicing.</p>
             <div className="chips">{SKILLS.map((s) => <span className="chip" key={s}>{s}</span>)}</div>
