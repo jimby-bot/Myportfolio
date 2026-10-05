@@ -107,8 +107,6 @@ export default function App() {
               ))}
             </ul>
           </Card>
-
-          <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>   {/* ← leave this as it is */}
           <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
             <p>Let's work together or just say hello.</p>
             <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
