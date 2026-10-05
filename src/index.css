@@ -23,7 +23,7 @@ body {
 }
 :focus-visible { outline: 4px solid var(--dark); outline-offset: 3px; }
 
-.layout { display: flex; gap: 14px; padding: 24px; max-width: 1500px; margin: 0 auto; }
+.layout { display: flex; gap: 10px; padding: 24px; max-width: 1500px; margin: 0 auto; }
 
 /* ---------- sidebar ---------- */
 .side {
@@ -132,10 +132,10 @@ h1 {
 @keyframes scroll { to { transform: translateX(-50%); } }
 
 /* ---------- cards ---------- */
-.bento { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bento { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 24px;
-  box-shadow: var(--shadow); scroll-margin-top: 24px; transition: .25s;
+  box-shadow: var(--shadow); scroll-margin-top: 15px; transition: .25s;
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(11, 98, 133, .16); }
 .card.wide { grid-column: span 2; }
