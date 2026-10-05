@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
 import Card from './components/Card.jsx'
 import HeroArt from './components/HeroArt.jsx'
-import { NAV, SKILLS, SERVICES, PROJECTS } from './data.js'
+import { NAV, SKILLS, SERVICES, PROJECTS, EDUCATION } from './data.js'
 
 export default function App() {
   const [open, setOpen] = useState(false)      // is the mobile menu open?
@@ -94,7 +94,21 @@ export default function App() {
             <ul className="list">
               {SERVICES.map(([name, icon], i) => <li key={name}><Icon icon={icon} /> {name}<em>0{i + 1}</em></li>)}
             </ul>
+          </Card>       
+          <Card id="education" icon={GraduationCap} title="Education" wide>
+            <p>Where I'm learning.</p>
+            <ul className="edu">
+              {EDUCATION.map(([school, program, years]) => (
+                <li key={school}>
+                  <span className="ico"><Icon icon={GraduationCap} /></span>
+                  <div><h3>{school}</h3><p>{program}</p></div>
+                  {years && <span className="tag">{years}</span>}
+                </li>
+              ))}
+            </ul>
           </Card>
+
+          <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>   {/* ← leave this as it is */}
           <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
             <p>Let's work together or just say hello.</p>
             <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
