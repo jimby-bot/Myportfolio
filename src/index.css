@@ -197,7 +197,7 @@ footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--mut
     border-radius: 0 28px 28px 0; transform: translateX(-105%); transition: transform .3s ease;
   }
   .side.open { transform: none; }
-    .avatar { width: min(200px, 56vw); height: min(200px, 56vw); }
+    .avatar { width: min(256px, 56vw); height: min(256px, 56vw); }
   .overlay {
     position: fixed; inset: 0; z-index: 40; background: rgba(8, 58, 77, .45);
     opacity: 0; pointer-events: none; transition: opacity .3s; display: block;
