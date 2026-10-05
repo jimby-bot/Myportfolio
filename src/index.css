@@ -171,6 +171,12 @@ h1 {
 .list li:last-child { border: 0; }
 .list em { margin-left: auto; font-style: normal; color: var(--dark); font-weight: 600; }
 .badge { display: inline-flex; gap: 8px; align-items: center; background: var(--dark); color: #fff; border-radius: 999px; padding: 8px 18px; font-weight: 600; }
+#education { grid-column: 1 / -1; }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.edu li { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: linear-gradient(135deg, #f4fafd, #e3f3fa); border: 1px solid var(--line); border-radius: 18px; }
+.edu h3 { margin: 0; font-size: 18px; color: var(--dark); }
+.edu p { margin: 0; font-size: 15px; }
+.edu .tag { margin-left: auto; white-space: nowrap; }
 footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--muted); }
 @media (max-height: 760px) and (min-width: 861px) {
   .side { padding: 16px 14px; }
