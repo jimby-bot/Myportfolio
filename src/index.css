@@ -27,13 +27,16 @@ body {
 
 /* ---------- sidebar ---------- */
 .side {
-  width: 280px;
+  width: 320px;
+  padding: 28px 24px;
   flex: none; position: sticky; top: 24px; 
   align-self: flex-start;
   height: calc(100vh - 48px);
-  overflow-y: auto; scrollbar-width: none;
-  background: var(--card); border: 1px solid var(--line); border-radius: 28px;
-  box-shadow: var(--shadow); padding: 28px 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background: var(--card);
+  border: 1px solid var(--line); border-radius: 28px;
+  box-shadow: var(--shadow);
   display: flex; flex-direction: column;
 }
 .side::-webkit-scrollbar { display: none; }
@@ -171,7 +174,7 @@ h1 {
 footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--muted); }
 @media (max-height: 760px) and (min-width: 861px) {
   .side { padding: 16px 14px; }
-  .avatar { width: 84px; height: 84px; margin-bottom: 8px; }
+  .avatar { margin-bottom: 8px; }
   .name { font-size: 19px; }
   .role { margin-bottom: 8px; }
   .soc { margin-bottom: 10px; }
@@ -194,6 +197,7 @@ footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--mut
     border-radius: 0 28px 28px 0; transform: translateX(-105%); transition: transform .3s ease;
   }
   .side.open { transform: none; }
+    .avatar { width: min(200px, 56vw); height: min(200px, 56vw); }
   .overlay {
     position: fixed; inset: 0; z-index: 40; background: rgba(8, 58, 77, .45);
     opacity: 0; pointer-events: none; transition: opacity .3s; display: block;
