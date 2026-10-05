@@ -177,6 +177,9 @@ h1 {
 .edu h3 { margin: 0; font-size: 18px; color: var(--dark); }
 .edu p { margin: 0; font-size: 15px; }
 .edu .tag { margin-left: auto; white-space: nowrap; }
+#about { display: flex; flex-direction: column; }
+#about p { font-size: 20px; line-height: 1.85; }
+#about .bar { margin-top: auto; }
 footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--muted); }
 @media (max-height: 760px) and (min-width: 861px) {
   .side { padding: 16px 14px; }
