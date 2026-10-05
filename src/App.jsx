@@ -67,8 +67,7 @@ export default function App() {
               I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer..</p>
             <div className="bar" aria-hidden="true"><span></span></div>
           </Card>
-            </div>
-          </Card>
+        </div>
            <Card id="projects" icon={FolderSimple} title="Projects" wide>
             <p>Websites and apps I built while learning.</p>
             <div className="tiles">
@@ -81,7 +80,6 @@ export default function App() {
                     <span className="tag">{tag}</span>
                   </div>
                   <span className="go"><Icon icon={ArrowRight} size={18} weight="bold" /></span>
-                </div>
               ))}
           <Card id="skills" icon={Lightning} title="Skills">
             <p>What I'm practicing.</p>
