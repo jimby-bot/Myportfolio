@@ -1,14 +1,14 @@
-import myPic from './myPic.png';
 import { useState, useEffect } from 'react'
-import { List, X, ArrowUpRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser } from '@phosphor-icons/react'
+import { List, X, ArrowUpRight, ArrowRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser } from '@phosphor-icons/react'
 import Icon from './components/Icon.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
 import Card from './components/Card.jsx'
+import HeroArt from './components/HeroArt.jsx'
 import { NAV, SKILLS, SERVICES, PROJECTS } from './data.js'
 
 export default function App() {
-  const [open, setOpen] = useState(false)     // is the mobile menu open?
+  const [open, setOpen] = useState(false)      // is the mobile menu open?
   const [active, setActive] = useState('home') // which nav link is highlighted?
 
   // highlight the nav link of the section currently on screen
@@ -49,13 +49,13 @@ export default function App() {
       <main>
         <div className="top" id="home">
           <span className="eyebrow"><span className="dot"></span> Open to learning and internships</span>
-          <h1>Learn it once. Build it forever.</h1>
-          <p className="lead">I'm a student web developer, I'm continuously learning, improving my skills, and turning small ideas into meaningful digital experiences.
-</p>
+          <h1>Learn it once. <span className="grad">Build it forever.</span></h1>
+          <p className="lead">I'm a student web developer turning ideas into clean, simple, and user friendly websites one line of code at a time. I'm continuously learning, improving my skills, and turning small ideas into meaningful digital experiences.</p>
           <div className="btns">
             <a className="btn" href="#contact">Get in touch <Icon icon={ArrowUpRight} /></a>
             <a className="btn alt" href="#projects">View projects</a>
           </div>
+          <HeroArt />
         </div>
 
         <Drivers />
@@ -64,13 +64,22 @@ export default function App() {
           <Card id="projects" icon={FolderSimple} title="Projects" wide>
             <p>Websites and apps I built while learning.</p>
             <div className="tiles">
-              {PROJECTS.map(([title, tag, desc]) => (
-                <div className="tile" key={title}><h3>{title}</h3><p>{desc}</p><span className="tag">{tag}</span></div>
+              {PROJECTS.map(([title, tag, desc, icon]) => (
+                <div className="tile" key={title}>
+                  <span className="ico"><Icon icon={icon} /></span>
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
+                    <span className="tag">{tag}</span>
+                  </div>
+                  <span className="go"><Icon icon={ArrowRight} size={18} weight="bold" /></span>
+                </div>
               ))}
             </div>
           </Card>
           <Card id="about" icon={User} title="About">
             <p>Hi, I'm Jimboy. I'm learning HTML, CSS, JavaScript and ReactJS one step at a time, and I'm aiming to become a full-stack developer.</p>
+            <div className="bar" aria-hidden="true"><span></span></div>
           </Card>
           <Card id="skills" icon={Lightning} title="Skills">
             <p>What I'm practicing.</p>
@@ -88,7 +97,7 @@ export default function App() {
           </Card>
           <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
             <p>Let's work together or just say hello.</p>
-            <a className="btn" href="https://www.torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
+            <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
           </Card>
         </div>
         <footer>© 2026 Jimboy Torralba. All rights reserved.</footer>
