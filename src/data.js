@@ -43,3 +43,8 @@ export const PROJECTS = [
   ['Personal Website', 'HTML and CSS', 'My first site, built from scratch.', Browser],
   ['To-Do App', 'JavaScript', 'Add, finish and remove tasks.', DeviceMobile],
 ]
+// [school, level, years]
+export const EDUCATION = [
+  ['Nueva Vizcaya State University', 'College', '2024 - Present'],
+  ['Casat National High School', 'High School', '2017 - 2024'],
+]
