@@ -27,8 +27,8 @@ body {
 
 /* ---------- sidebar ---------- */
 .side {
-  width: 280px;
-  padding: 28px 24px;
+  width: 220px;
+  padding: 20px 16px;
   flex: none; position: sticky; top: 24px; 
   align-self: flex-start;
   height: calc(100vh - 48px);
