@@ -13,9 +13,9 @@ export default function Drivers() {
       </div>
       <div className="marquee">
         <div className="track">
-          {loop.map(([name, icon], i) => (
+          {loop.map(([name, Glyph, color], i) => (
             <span key={name + i} aria-hidden={i >= TOOLS.length ? 'true' : undefined}>
-              <Icon icon={icon} /> {name}
+              <Glyph size={24} color={color} aria-hidden="true" /> {name}
             </span>
           ))}
         </div>
