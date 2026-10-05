@@ -23,7 +23,7 @@ body {
 }
 :focus-visible { outline: 4px solid var(--dark); outline-offset: 3px; }
 
-.layout { display: flex; gap: 28px; padding: 24px; max-width: 1500px; margin: 0 auto; }
+.layout { display: flex; gap: 14px; padding: 24px; max-width: 1500px; margin: 0 auto; }
 
 /* ---------- sidebar ---------- */
 .side {
