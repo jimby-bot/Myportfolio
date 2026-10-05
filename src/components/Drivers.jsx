@@ -1,15 +1,22 @@
+import { Lightning } from '@phosphor-icons/react'
 import Icon from './Icon.jsx'
 import { TOOLS } from '../data.js'
 
 export default function Drivers() {
-  const items = [...TOOLS, ...TOOLS] // doubled so the marquee loops without a gap
+  const loop = [...TOOLS, ...TOOLS] // doubled so the scroll loops with no gap
   return (
     <div className="drivers">
-      <div><small>Daily drivers</small><b>Tools I work with</b></div>
-      <div className="marquee" aria-label="Tools I work with">
+      <span className="ico round"><Icon icon={Lightning} weight="fill" /></span>
+      <div>
+        <small>Daily drivers</small>
+        <b>Tools I work with</b>
+      </div>
+      <div className="marquee">
         <div className="track">
-          {items.map(([name, icon], i) => (
-            <span key={i}><Icon icon={icon} /> {name}</span>
+          {loop.map(([name, icon], i) => (
+            <span key={name + i} aria-hidden={i >= TOOLS.length ? 'true' : undefined}>
+              <Icon icon={icon} /> {name}
+            </span>
           ))}
         </div>
       </div>

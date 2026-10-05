@@ -1,4 +1,4 @@
-// Small helper: <Icon icon={House} /> draws a Phosphor icon at a readable size
-export default function Icon({ icon: Glyph }) {
-  return <Glyph size="1.25em" aria-hidden="true" style={{ verticalAlign: '-.2em' }} />
+// One place to control icon size and style for the whole site.
+export default function Icon({ icon: Glyph, size = 22, weight = 'duotone' }) {
+  return <Glyph size={size} weight={weight} aria-hidden="true" />
 }
