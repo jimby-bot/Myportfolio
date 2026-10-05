@@ -50,7 +50,7 @@ export default function App() {
         <div className="top" id="home">
           <span className="eyebrow"><span className="dot"></span> Open to learning and internships</span>
           <h1>Learn it once. Build it forever.</h1>
-          <p className="lead">I'm a student web developer turning ideas into clean, simple, and user friendly websites one line of code at a time. I'm continuously learning, improving my skills, and turning small ideas into meaningful digital experiences.
+          <p className="lead">I'm a student web developer, I'm continuously learning, improving my skills, and turning small ideas into meaningful digital experiences.
 </p>
           <div className="btns">
             <a className="btn" href="#contact">Get in touch <Icon icon={ArrowUpRight} /></a>
