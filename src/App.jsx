@@ -60,58 +60,60 @@ export default function App() {
 
         <Drivers />
 
-        <div className="bento">
-           <Card id="about" icon={User} title="About">
-            <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
-              I’m passionate about learning web development and building practical digital solutions.
-              I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer..</p>
-            <div className="bar" aria-hidden="true"><span></span></div>
-          </Card>
+      <div className="bento">
+  <Card id="about" icon={User} title="About" wide>
+    <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
+      I’m passionate about learning web development and building practical digital solutions.
+      I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer.</p>
+    <div className="bar" aria-hidden="true"><span></span></div>
+  </Card>
+  <Card id="projects" icon={FolderSimple} title="Projects">
+    <p>Websites and apps I built while learning.</p>
+    <div className="tiles">
+      {PROJECTS.map(([title, tag, desc, icon]) => (
+        <div className="tile" key={title}>
+          <span className="ico"><Icon icon={icon} /></span>
+          <div>
+            <h3>{title}</h3>
+            <p>{desc}</p>
+            <span className="tag">{tag}</span>
+          </div>
+          <span className="go"><Icon icon={ArrowRight} size={18} weight="bold" /></span>
         </div>
-           <Card id="projects" icon={FolderSimple} title="Projects" wide>
-            <p>Websites and apps I built while learning.</p>
-            <div className="tiles">
-              {PROJECTS.map(([title, tag, desc, icon]) => (
-                <div className="tile" key={title}>
-                  <span className="ico"><Icon icon={icon} /></span>
-                  <div>
-                    <h3>{title}</h3>
-                    <p>{desc}</p>
-                    <span className="tag">{tag}</span>
-                  </div>
-                  <span className="go"><Icon icon={ArrowRight} size={18} weight="bold" /></span>
-              ))}
-          <Card id="skills" icon={Lightning} title="Skills">
-            <p>What I'm practicing.</p>
-            <div className="chips">{SKILLS.map((s) => <span className="chip" key={s}>{s}</span>)}</div>
-          </Card>
-          <Card icon={GraduationCap} title="Credentials">
-            <p>Student web developer, growing every day.</p>
-            <span className="badge"><Icon icon={SealCheck} /> Learning</span>
-          </Card>
-          <Card icon={Browser} title="Services">
-            <p>What I can build.</p>
-            <ul className="list">
-              {SERVICES.map(([name, icon], i) => <li key={name}><Icon icon={icon} /> {name}<em>0{i + 1}</em></li>)}
-            </ul>
-          </Card>       
-          <Card id="education" icon={GraduationCap} title="Education" wide>
-            <p>Where I'm learning.</p>
-            <ul className="edu">
-              {EDUCATION.map(([school, program, years]) => (
-                <li key={school}>
-                  <span className="ico"><Icon icon={GraduationCap} /></span>
-                  <div><h3>{school}</h3><p>{program}</p></div>
-                  {years && <span className="tag">{years}</span>}
-                </li>
-              ))}
-            </ul>
-          </Card>
-          <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
-            <p>Let's work together or just say hello.</p>
-            <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
-          </Card>
-        </div>
+      ))}
+    </div>
+  </Card>
+  <Card id="skills" icon={Lightning} title="Skills">
+    <p>What I'm practicing.</p>
+    <div className="chips">{SKILLS.map((s) => <span className="chip" key={s}>{s}</span>)}</div>
+  </Card>
+  <Card icon={GraduationCap} title="Credentials">
+    <p>Student web developer, growing every day.</p>
+    <span className="badge"><Icon icon={SealCheck} /> Learning</span>
+  </Card>
+  <Card icon={Browser} title="Services">
+    <p>What I can build.</p>
+    <ul className="list">
+      {SERVICES.map(([name, icon], i) => <li key={name}><Icon icon={icon} /> {name}<em>0{i + 1}</em></li>)}
+    </ul>
+  </Card>
+  <Card id="education" icon={GraduationCap} title="Education" wide>
+    <p>Where I'm learning.</p>
+    <ul className="edu">
+      {EDUCATION.map(([school, program, years]) => (
+        <li key={school}>
+          <span className="ico"><Icon icon={GraduationCap} /></span>
+          <div><h3>{school}</h3><p>{program}</p></div>
+          {years && <span className="tag">{years}</span>}
+        </li>
+      ))}
+    </ul>
+  </Card>
+  <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
+    <p>Let's work together or just say hello.</p>
+    <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
+  </Card>
+</div>
         <footer>© 2026 Jimboy Torralba. All rights reserved.</footer>
       </main>
     </div>
