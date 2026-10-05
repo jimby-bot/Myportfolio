@@ -1,9 +1,11 @@
 import {
   House, FolderSimple, User, Lightning, EnvelopeSimple,
-  FileHtml, FileCss, FileJs, Code, Atom, Hexagon,
+  Atom,
   Browser, DeviceMobile, PaintBrush,
   FacebookLogo, LinkedinLogo, GithubLogo,
 } from '@phosphor-icons/react'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
+import { VscVscode } from 'react-icons/vsc'
 
 export const NAV = [
   ['home', 'Home', House],
@@ -19,9 +21,14 @@ export const SOCIALS = [
   ['GitHub', GithubLogo, 'https://github.com'],
   ['Email', EnvelopeSimple, 'mailto:torralbajimby@gmail.com'],
 ]
+// [name, icon, brand color]
 export const TOOLS = [
-  ['HTML', FileHtml], ['CSS', FileCss], ['JavaScript', FileJs],
-  ['Visual Studio', Code], ['ReactJS', Atom], ['NodeJS', Hexagon],
+  ['HTML', FaHtml5, '#E34F26'],
+  ['CSS', FaCss3Alt, '#1572B6'],
+  ['JavaScript', FaJs, '#E6B800'],
+  ['Visual Studio', VscVscode, '#007ACC'],
+  ['ReactJS', FaReact, '#149ECA'],
+  ['NodeJS', FaNodeJs, '#339933'],
 ]
 export const SKILLS = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJS', 'Git']
 export const SERVICES = [
