@@ -206,7 +206,7 @@ footer { margin-top: 28px; text-align: center; font-size: 15px; color: var(--mut
   }
   .brand { font-weight: 700; font-size: 20px; color: var(--dark); }
   .side {
-    position: fixed; z-index: 50; top: 0; left: 0; bottom: 0; width: min(96vw, 420px); height: auto;
+    position: fixed; z-index: 50; top: 0; left: 0; bottom: 0; width: min(94vw, 386px); height: auto;
     border-radius: 0 28px 28px 0; transform: translateX(-105%); transition: transform .3s ease;
   }
   .side.open { transform: none; }
