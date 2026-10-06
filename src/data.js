@@ -4,7 +4,7 @@ import {
   Browsers, Devices, Palette, ListChecks,
   Certificate, Medal, SealCheck,
   FacebookLogo, LinkedinLogo, GithubLogo,
-} from '@phosphor-icons/react''
+} from '@phosphor-icons/react'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
 import { VscVscode } from 'react-icons/vsc'
 
