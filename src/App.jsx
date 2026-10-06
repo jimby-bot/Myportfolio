@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { List, X, ArrowUpRight, ArrowRight, EnvelopeSimple, SealCheck, GraduationCap, FolderSimple, User, Lightning, Browser, Code, RocketLaunch } from '@phosphor-icons/react'
+import { List, X, ArrowUpRight, ArrowRight, PaperPlaneTilt, Certificate, GraduationCap, FolderOpen, UserCircle, Lightning, Wrench, CodeBlock, Target } from '@phosphor-icons/react'
 import Icon from './components/Icon.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
