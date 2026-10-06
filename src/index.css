@@ -80,7 +80,7 @@ body {
 /* ---------- main / hero ---------- */
 main { flex: 1; min-width: 0; }
 .top {
-  position: relative; overflow: hidden; margin-bottom: 24px; padding: 32px 36px 36px;
+  position: relative; overflow: hidden; margin-bottom: 12px; padding: 32px 36px 36px;
   border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow);
   background:
     radial-gradient(500px 260px at 100% 100%, #87ceeb88, transparent 70%),
@@ -90,7 +90,7 @@ main { flex: 1; min-width: 0; }
 .eyebrow {
   display: inline-flex; gap: 8px; align-items: center; background: #fff;
   border: 1px solid var(--sky); color: var(--dark); font-weight: 500; font-size: 16px;
-  padding: 6px 16px; border-radius: 999px; margin-bottom: 12px;
+  padding: 6px 16px; border-radius: 999px; margin-bottom: 16px;
 }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: #22a06b; }
 h1 {
