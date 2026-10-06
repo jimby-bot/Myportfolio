@@ -5,12 +5,12 @@ import Sidebar from './components/Sidebar.jsx'
 import Drivers from './components/Drivers.jsx'
 import Card from './components/Card.jsx'
 import HeroArt from './components/HeroArt.jsx'
-import { NAV, SKILLS, SERVICES, PROJECTS, EDUCATION } from './data.js'
+import { NAV, SKILLS, SERVICES, PROJECTS, EDUCATION, CERTIFICATES } from './data.js'
 
 const FACTS = [
   [GraduationCap, '3rd-Year BSIT', 'Nueva Vizcaya State University'],
-  [Code, 'Web Development', 'HTML, CSS, JavaScript and React'],
-  [RocketLaunch, 'My Goal', 'Become a full-stack developer'],
+  [CodeBlock, 'Web Development', 'HTML, CSS, JavaScript and React'],
+  [Target, 'My Goal', 'Become a full-stack developer'],
 ]
 export default function App() {
   const [open, setOpen] = useState(false)      // is the mobile menu open?
@@ -66,7 +66,7 @@ export default function App() {
         <Drivers />
 
       <div className="bento">
-  <Card id="about" icon={User} title="About" wide>
+  <Card id="about" icon={UserCircle} title="About" wide>
     <p>Hi, I’m Jimboy Torralba, a 3rd-year BSIT student at Nueva Vizcaya State University.
       I’m passionate about learning web development and building practical digital solutions.
       I continue to improve my skills one step at a time, with the goal of becoming a full-stack developer.</p>
@@ -80,7 +80,7 @@ export default function App() {
 </ul>
     <div className="bar" aria-hidden="true"><span></span></div>
   </Card>
-  <Card id="projects" icon={FolderSimple} title="Projects">
+  <Card id="projects" icon={FolderOpen} title="Projects">
     <p>Websites and apps I built while learning.</p>
     <div className="tiles">
       {PROJECTS.map(([title, tag, desc, icon]) => (
@@ -100,11 +100,28 @@ export default function App() {
     <p>What I'm practicing.</p>
     <div className="chips">{SKILLS.map((s) => <span className="chip" key={s}>{s}</span>)}</div>
   </Card>
-  <Card icon={GraduationCap} title="Credentials">
-    <p>Student web developer, growing every day.</p>
-    <span className="badge"><Icon icon={SealCheck} /> Learning</span>
+  <Card icon={Certificate} title="Credentials">
+    <p>Certificates I've earned.</p>
+    <ul className="certs">
+      {CERTIFICATES.map(([title, issuer, year, icon, link]) => {
+        const body = (
+          <>
+            <span className="ico"><Icon icon={icon} /></span>
+            <div><b>{title}</b><small>{issuer}</small></div>
+            <span className="tag">{year}</span>
+          </>
+        )
+        return (
+          <li key={title}>
+            {link
+              ? <a href={link} target="_blank" rel="noreferrer">{body}</a>
+              : <div className="cert-row">{body}</div>}
+          </li>
+        )
+      })}
+    </ul>
   </Card>
-  <Card icon={Browser} title="Services">
+  <Card icon={Wrench} title="Services">
     <p>What I can build.</p>
     <ul className="list">
       {SERVICES.map(([name, icon], i) => <li key={name}><Icon icon={icon} /> {name}<em>0{i + 1}</em></li>)}
@@ -113,18 +130,18 @@ export default function App() {
   <Card id="education" icon={GraduationCap} title="Education" wide>
     <p>Where I'm learning.</p>
     <ul className="edu">
-      {EDUCATION.map(([school, program, years]) => (
+      {EDUCATION.map(([school, program, years, icon]) => (
         <li key={school}>
-          <span className="ico"><Icon icon={GraduationCap} /></span>
+          <span className="ico"><Icon icon={icon} /></span>
           <div><h3>{school}</h3><p>{program}</p></div>
           {years && <span className="tag">{years}</span>}
         </li>
       ))}
     </ul>
   </Card>
-  <Card id="contact" icon={EnvelopeSimple} title="Contact" wide>
+  <Card id="contact" icon={PaperPlaneTilt} title="Contact" wide>
     <p>Let's work together or just say hello.</p>
-    <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={EnvelopeSimple} /> Email me</a>
+    <a className="btn" href="mailto:torralbajimby@gmail.com"><Icon icon={PaperPlaneTilt} /> Email me</a>
   </Card>
 </div>
         <footer>© 2026 Jimboy Torralba. All rights reserved.</footer>

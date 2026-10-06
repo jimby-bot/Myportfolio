@@ -37,20 +37,20 @@ export const SERVICES = [
   ['Responsive Websites', Devices],
   ['React Components', Atom],
   ['Mobile-friendly Pages', DeviceMobile],
-  ['Clean UI Design', Palette]
+  ['Clean UI Design', Palette],
 ]
 // [title, tag, description, icon]
 export const PROJECTS = [
-['Personal Website', 'HTML and CSS', 'My first site, built from scratch.', Browsers],
-['To-Do App', 'JavaScript', 'Add, finish and remove tasks.', ListChecks],
+  ['Personal Website', 'HTML and CSS', 'My first site, built from scratch.', Browsers],
+  ['To-Do App', 'JavaScript', 'Add, finish and remove tasks.', ListChecks],
 ]
-// [school, level, years]
 // [school, level, years, icon]
 export const EDUCATION = [
   ['Nueva Vizcaya State University', 'College', '2024 - Present', GraduationCap],
   ['Casat National High School', 'High School', '2017 - 2024', Student],
 ]
-// [title, issuer, year, icon, link]
+// [title, issuer, year, icon, link]  <- EDIT THESE 3 with your own certificates.
+// Leave the link as '' if you have none; add a URL to make the certificate clickable.
 export const CERTIFICATES = [
   ['Responsive Web Design', 'freeCodeCamp', '2025', Certificate, ''],
   ['JavaScript Essentials', 'Cisco Networking Academy', '2025', Medal, ''],
