@@ -90,7 +90,7 @@ main { flex: 1; min-width: 0; }
 .eyebrow {
   display: inline-flex; gap: 8px; align-items: center; background: #fff;
   border: 1px solid var(--sky); color: var(--dark); font-weight: 500; font-size: 16px;
-  padding: 6px 16px; border-radius: 999px; margin-bottom: 18px;
+  padding: 6px 16px; border-radius: 999px; margin-bottom: 12px;
 }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: #22a06b; }
 h1 {
@@ -116,7 +116,7 @@ h1 {
 /* ---------- tools strip ---------- */
 .drivers {
   display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid var(--line);
-  border-radius: 22px; padding: 10px 14px 10px 14px; margin-bottom: 24px; box-shadow: var(--shadow);
+  border-radius: 22px; padding: 10px 14px 10px 14px; margin-bottom: 12px; box-shadow: var(--shadow);
 }
 .drivers small { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; line-height: 1.3; }
 .drivers b { font-size: 19px; color: var(--dark); white-space: nowrap; }
@@ -126,7 +126,7 @@ h1 {
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.track { display: flex; gap: 20px; width: max-content; animation: scroll 22s linear infinite; }
+.track { display: flex; gap: 40px; width: max-content; animation: scroll 22s linear infinite; }
 .marquee:hover .track { animation-play-state: paused; }
 .track span { white-space: nowrap; font-weight: 500; color: var(--dark); display: flex; gap: 8px; align-items: center; }
 @keyframes scroll { to { transform: translateX(-50%); } }
