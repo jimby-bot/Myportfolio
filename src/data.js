@@ -42,7 +42,7 @@ export const SERVICES = [
 // [title, tag, description, icon]
 export const PROJECTS = [
   ['Personal Website', 'HTML and CSS', 'My first site, built from scratch.', Browsers],
-  ['Simple Calculator', 'Java', 'Add, finish and remove tasks.', ListChecks],
+  ['Simple Calculator', 'Java', 'Add, Calculate like a real Calculator.', ListChecks],
 ]
 // [school, level, years, icon]
 export const EDUCATION = [
@@ -52,7 +52,7 @@ export const EDUCATION = [
 // [title, issuer, year, icon, link]  <- EDIT THESE 3 with your own certificates.
 // Leave the link as '' if you have none; add a URL to make the certificate clickable.
 export const CERTIFICATES = [
-  ['Responsive Web Design', 'freeCodeCamp', '2025', Certificate, ''],
+  ['HTML and CSS', 'Cisco Networking Academy', '2025', Certificate, ''],
   ['JavaScript Essentials', 'Cisco Networking Academy', '2025', Medal, ''],
   ['Introduction to Git and GitHub', 'Coursera', '2025', SealCheck, ''],
 ]
