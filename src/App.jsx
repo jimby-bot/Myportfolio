@@ -9,7 +9,7 @@ import { NAV, SKILLS, SERVICES, PROJECTS, EDUCATION, CERTIFICATES } from './data
 
 const FACTS = [
   [GraduationCap, '3rd-Year BSIT', 'Nueva Vizcaya State University'],
-  [CodeBlock, 'Web Development', 'HTML, CSS, JavaScript and React'],
+  [CodeBlock, 'Web Development', 'HTML, ReactJS, NodeJS and TailwindCSS'],
   [Target, 'My Goal', 'Become a full-stack developer'],
 ]
 export default function App() {
