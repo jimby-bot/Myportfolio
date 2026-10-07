@@ -42,7 +42,7 @@ export const SERVICES = [
 // [title, tag, description, icon]
 export const PROJECTS = [
   ['Personal Website', 'HTML and CSS', 'My first site, built from scratch.', Browsers],
-  ['To-Do App', 'JavaScript', 'Add, finish and remove tasks.', ListChecks],
+  ['Simple Calculator', 'Java', 'Add, finish and remove tasks.', ListChecks],
 ]
 // [school, level, years, icon]
 export const EDUCATION = [
